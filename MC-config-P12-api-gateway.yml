@@ -14,24 +14,24 @@ eureka:
 #secret du JWT
 jwt:
   secret: secret
-    #expiration en millis du refresh token
+#expiration en millis du refresh token
   expiration:
     token:
       refresh: 864000000
-    ##expiration en millis du auth token
+##expiration en millis du auth token
       auth: 300000
-    #préfix que apparait avant le jwt
+#préfix que apparait avant le jwt
   prefix: bearer
-    #nom du champs de la liste des roles dans le payload
+#nom du champs de la liste des roles dans le payload
     authorities: roles
-    #nom du champs de la vérification pour le refresh dans le payload
+#nom du champs de la vérification pour le refresh dans le payload
     active:
       refresh: active
-    #nom du header du JWT pour l'auth
+#nom du header du JWT pour l'auth
   header:
     token:
       auth: Authorization
-    #nom du header du JWT pour le refresh
+ #nom du header du JWT pour le refresh
       refresh: refresh
 
 
